@@ -1,12 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
-
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
 }
-
 const { post } = Astro.props;
 const { Content } = await render(post);
 const fmt = (d) => d.toLocaleDateString('uk-UA', { day: '2-digit', month: 'long', year: 'numeric' });
