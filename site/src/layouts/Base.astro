@@ -1,0 +1,46 @@
+---
+const { title, description = 'Бухгалтерський супровід ФОП 2 і 3 групи. Київ та вся Україна, онлайн. 2000 грн/міс.' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={Astro.url.href}>
+  <link rel="alternate" type="application/rss+xml" title="Блог — Гарний Звіт" href="/rss.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,400&family=Lora:ital,wght@0,400..600;1,400&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <style>body{margin:0;text-wrap:pretty}a:hover{color:var(--color-accent-700)}</style>
+</head>
+<body>
+<div style="min-height:100vh;background:var(--color-bg);color:var(--color-text)">
+  <header style="position:sticky;top:0;z-index:20;background:var(--color-bg)">
+    <div class="nav" style="max-width:1080px;margin:0 auto;padding:var(--space-3) var(--space-6)">
+      <a class="nav-brand" href="/" style="text-decoration:none;letter-spacing:-0.01em">Гарний<span style="color:var(--color-accent)">.</span>Звіт</a>
+      <nav style="display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap">
+        <a href="/">Головна</a>
+        <a href="/poslugy/">Послуги</a>
+        <a href="/taryfy/">Тарифи</a>
+        <a href="/pro-mene/">Про мене</a>
+        
+          <a href="/blog/">Блог</a>
+        
+        <a href="/kontakty/">Контакти</a>
+        <a class="btn btn-primary" href="https://t.me/+380930185887" target="_blank" rel="noreferrer">Telegram</a>
+      </nav>
+    </div>
+  </header>
+  <slot />
+  <footer style="border-top:1px solid var(--color-divider);margin-top:var(--space-8)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-6);display:flex;flex-wrap:wrap;gap:var(--space-4);justify-content:space-between;align-items:center">
+      <p style="margin:0;font-family:var(--font-heading);font-size:16px">Гарний<span style="color:var(--color-accent)">.</span>Звіт · Київ та вся Україна</p>
+      <p style="margin:0;font-size:12px;color:var(--color-neutral-600)">Супровід ФОП 2 і 3 групи · 2000 грн/міс</p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

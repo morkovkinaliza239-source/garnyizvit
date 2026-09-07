@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: ВАШ_НІК/garnyizvit   # змініть на свій репозиторій
+  branch: main
+
+media_folder: "site/public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: blog
+    label: "Статті блогу"
+    folder: "site/src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Заголовок", widget: string }
+      - { name: description, label: "Короткий опис (видно у списку та в Google)", widget: text }
+      - { name: date, label: "Дата", widget: datetime, format: "YYYY-MM-DD" }
+      - { name: tag, label: "Тема", widget: select, options: ["Податки", "Валюта", "Групи", "Кадри", "Реєстрація"], required: false }
+      - { name: body, label: "Текст статті", widget: markdown }

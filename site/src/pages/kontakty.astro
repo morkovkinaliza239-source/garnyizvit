@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Контакти — Гарний Звіт" description="Telegram, Viber, телефон +380 93 018 58 87. Пн–Пт 9:00–19:00.">
+<main style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-8);align-items:start">
+      <div>
+        <p style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:var(--space-3)">Контакти</p>
+        <h1 style="font-size:clamp(34px,4.4vw,50px);font-weight:400;margin:0 0 var(--space-4)">Напишіть — відповім сам</h1>
+        <p style="max-width:48ch;text-align:justify;color:var(--color-neutral-800);font-size:16px">Найшвидше — Telegram. Опишіть у двох реченнях: група ФОП, вид діяльності, чи є працівники. Скажу, з чого починати.</p>
+        <div style="border-top:1px solid var(--color-divider);margin-top:var(--space-6);display:grid">
+          <a href="https://t.me/+380930185887" target="_blank" rel="noreferrer" style="display:flex;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0;border-bottom:1px solid var(--color-divider);text-decoration:none;color:inherit">
+            <span style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-neutral-600)">Telegram</span>
+            <span style="color:var(--color-accent-700)">+380 93 018 58 87</span>
+          </a>
+          <a href="viber://chat?number=%2B380930185887" style="display:flex;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0;border-bottom:1px solid var(--color-divider);text-decoration:none;color:inherit">
+            <span style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-neutral-600)">Viber</span>
+            <span style="color:var(--color-accent-700);font-feature-settings:'tnum'">+38 (093) 018-58-87</span>
+          </a>
+          <a href="tel:+380930185887" style="display:flex;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0;border-bottom:1px solid var(--color-divider);text-decoration:none;color:inherit">
+            <span style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-neutral-600)">Телефон</span>
+            <span style="color:var(--color-accent-700);font-feature-settings:'tnum'">+38 (093) 018-58-87</span>
+          </a>
+          <a href="mailto:info@garnyizvit.com.ua" style="display:flex;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0;border-bottom:1px solid var(--color-divider);text-decoration:none;color:inherit">
+            <span style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-neutral-600)">E-mail</span>
+            <span style="color:var(--color-accent-700)">info@garnyizvit.com.ua</span>
+          </a>
+          <div style="display:flex;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0;border-bottom:1px solid var(--color-divider)">
+            <span style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-neutral-600)">Графік</span>
+            <span>Пн–Пт, 9:00–19:00</span>
+          </div>
+        </div>
+      </div>
+
+      <form style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:var(--space-6);display:grid;gap:var(--space-4)" action="https://formspree.io/f/ВАШ_ID" method="POST">
+        <h2 style="font-size:24px;font-weight:400;margin:0">Заявка на консультацію</h2>
+        <div class="field">
+          <label for="fio">Ім'я</label>
+          <input class="input" id="fio" name="fio" placeholder="Олена" required="">
+        </div>
+        <div class="field">
+          <label for="tel">Телефон або @telegram</label>
+          <input class="input" id="tel" name="tel" placeholder="+380 …" required="">
+        </div>
+        <div class="field">
+          <label for="grp">Група ФОП</label>
+          <div class="seg" style="width:100%">
+            <label class="seg-opt" style="flex:1;justify-content:center"><input type="radio" name="grp" value="2" checked="">2 група</label>
+            <label class="seg-opt" style="flex:1;justify-content:center"><input type="radio" name="grp" value="3">3 група</label>
+            <label class="seg-opt" style="flex:1;justify-content:center"><input type="radio" name="grp" value="new">Ще немає</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="msg">Коротко про ситуацію</label>
+          <textarea class="input" id="msg" name="msg" placeholder="Вид діяльності, наймані працівники, поточний стан обліку"></textarea>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Надіслати заявку</button>
+        
+      </form>
+    </div>
+  </main>
+</Base>

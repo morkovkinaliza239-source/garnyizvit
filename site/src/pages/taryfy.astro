@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Тарифи — Гарний Звіт" description="2000 грн/міс без найманих працівників, +500 грн за кожного працівника.">
+<main style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+    <p style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:var(--space-3)">Тарифи</p>
+    <h1 style="font-size:clamp(34px,4.4vw,50px);font-weight:400;margin:0 0 var(--space-4)">Одна ціна, без прихованих доплат</h1>
+    <p style="max-width:56ch;text-align:justify;color:var(--color-neutral-800);font-size:16px">Супровід коштує 2000 грн на місяць, якщо у вас немає найманих працівників. За кожного працівника — плюс 500 грн. Кількість операцій, банків і замовників на ціну не впливає.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-4);margin-top:var(--space-8)">
+      <div class="card" style="padding:var(--space-6)">
+        <span class="card-kicker">Базовий</span>
+        <p style="font-family:var(--font-heading);font-size:44px;line-height:1;font-weight:400;font-feature-settings:'tnum';margin:0"> 2000 <span style="font-size:18px">грн/міс</span></p>
+        <p class="card-body" style="font-size:14px;opacity:1;color:var(--color-neutral-800)">ФОП 2 або 3 групи без найманих працівників — повний облік і вся звітність.</p>
+        <a class="btn btn-primary btn-block" href="/kontakty/">Почати</a>
+      </div>
+      <div class="card" style="padding:var(--space-6)">
+        <span class="card-kicker">З працівниками</span>
+        <p style="font-family:var(--font-heading);font-size:44px;line-height:1;font-weight:400;font-feature-settings:'tnum';margin:0">2000 <span style="font-size:18px">+ 500 × N</span></p>
+        <p class="card-body" style="font-size:14px;opacity:1;color:var(--color-neutral-800)">Базовий тариф плюс 500 грн за кожного найманого працівника: зарплата, кадри, звіти.</p>
+        <a class="btn btn-primary btn-block" href="/kontakty/">Розрахувати</a>
+      </div>
+      <div class="card" style="padding:var(--space-6)">
+        <span class="card-kicker">Разові роботи</span>
+        <p style="font-family:var(--font-heading);font-size:44px;line-height:1;font-weight:400;margin:0">за запитом</p>
+        <p class="card-body" style="font-size:14px;opacity:1;color:var(--color-neutral-800)">Реєстрація ФОП, зміна групи чи КВЕДів, відновлення обліку, закриття ФОП.</p>
+        <a class="btn btn-secondary btn-block" href="/kontakty/">Запитати ціну</a>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-8);margin-top:var(--space-8);border-top:1px solid var(--color-divider);padding-top:var(--space-6)">
+      <div>
+        <h2 style="font-size:26px;font-weight:400;margin:0 0 var(--space-4)">Входить у супровід</h2>
+        <ul style="margin:0;padding-left:1.1em;color:var(--color-neutral-800);display:grid;gap:var(--space-2)">
+          <li>Облік доходів і ведення книги обліку</li>
+          <li>Розрахунок єдиного податку та ЄСВ, реквізити для оплати</li>
+          <li>Квартальна й річна звітність, подання через кабінет платника</li>
+          <li>Контроль ліміту доходу та строків платежів</li>
+          <li>Нагадування перед кожним дедлайном</li>
+          <li>Консультації протягом місяця — без ліміту звернень</li>
+        </ul>
+      </div>
+      <div>
+        <h2 style="font-size:26px;font-weight:400;margin:0 0 var(--space-4)">Оплачується окремо</h2>
+        <ul style="margin:0;padding-left:1.1em;color:var(--color-neutral-800);display:grid;gap:var(--space-2)">
+          <li>Реєстрація або закриття ФОП</li>
+          <li>Зміна групи чи КВЕДів</li>
+          <li>Відновлення обліку за минулі періоди</li>
+          <li>Супровід перевірки податкової</li>
+          <li>Ключ ЕЦП та банківські комісії — сплачуються напряму</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</Base>

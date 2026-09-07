@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://garnyizvit.com.ua/sitemap-index.xml

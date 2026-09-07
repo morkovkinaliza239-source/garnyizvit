@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date - a.data.date);
+const fmt = (d) => d.toLocaleDateString('uk-UA', { day: '2-digit', month: 'long', year: 'numeric' });
+---
+<Base title="Блог — Гарний Звіт" description="Зміни у законодавстві для ФОП: дедлайни, ліміти, податки.">
+<main style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+  <p style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:var(--space-3)">Блог</p>
+  <h1 style="font-size:clamp(34px,4.4vw,50px);font-weight:400;margin:0 0 var(--space-4)">Що змінюється для ФОП</h1>
+  <p style="max-width:56ch;color:var(--color-neutral-800);text-align:justify;font-size:16px">Короткі розбори змін у законодавстві — без переказу кодексів, тільки те, що впливає на ваші платежі та звіти.</p>
+
+  <div style="margin-top:var(--space-8);display:grid;gap:var(--space-6)">
+    {posts.map((p) => (
+      <article style="border-top:1px solid var(--color-divider);padding-top:var(--space-4);display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-6)">
+        <div>
+          <p style="margin:0;font-size:12px;font-feature-settings:'tnum';color:var(--color-neutral-600)">{fmt(p.data.date)}</p>
+          {p.data.tag && <span class="tag tag-outline" style="margin-top:var(--space-2)">{p.data.tag}</span>}
+        </div>
+        <div style="grid-column:span 2">
+          <h2 style="font-size:24px;font-weight:400;margin:0 0 var(--space-2)">
+            <a href={`/blog/${p.slug}/`} style="text-decoration:none;color:inherit">{p.data.title}</a>
+          </h2>
+          <p style="margin:0;color:var(--color-neutral-800)">{p.data.description}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+</main>
+</Base>
