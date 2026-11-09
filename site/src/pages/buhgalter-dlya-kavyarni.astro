@@ -131,50 +131,6 @@ const jsonLd = [
 
   <section style="border-top:1px solid var(--color-divider)">
     <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
-      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-4)">Еквайринг і доставки в обліку кав'ярні</h2>
-      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:0 0 var(--space-6)">Більшість гостей платить карткою, тому розрахунки через термінал і сервіси доставки найсильніше впливають на облік.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--space-4)">
-        <div class="card">
-          <span class="card-kicker">Податок</span>
-          <span class="card-title">Комісія еквайрингу й дохід</span>
-          <p class="card-body">Для ФОП на єдиному податку 1-3 груп дохід за розрахунком карткою це повна сума оплати: комісія банку дохід не зменшує. Так роз'яснює ДПС, але позиція колись змінювалася, тому звіряюся з актуальним роз'ясненням.</p>
-        </div>
-        <div class="card">
-          <span class="card-kicker">Управлінський облік</span>
-          <span class="card-title">Комісія як витрата</span>
-          <p class="card-body">Для власника комісія банку це реальна витрата. Показую її окремою статтею, щоб ви бачили, скільки заклад заробляє після всіх платежів.</p>
-        </div>
-        <div class="card">
-          <span class="card-kicker">Доставка</span>
-          <span class="card-title">Сервіси доставки й виплати</span>
-          <p class="card-body">Якщо працюєте через сервіси доставки, звіряю виплати платформ із чеками ПРРО й показую комісію сервісу окремою статтею витрат.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="border-top:1px solid var(--color-divider)">
-    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
-      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-4)">ФОП чи ТОВ для кав'ярні</h2>
-      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:0 0 var(--space-6)">Форму ведення бізнесу краще обрати до відкриття закладу. Коротке порівняння:</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-4)">
-        <div class="card">
-          <span class="card-kicker">Варіант 1</span>
-          <span class="card-title">ФОП</span>
-          <p class="card-body">Реєстрація безкоштовна, онлайн через Дію. На єдиному податку без ПДВ достатньо обліку доходів. Власник відповідає за зобов'язання всім своїм майном. Ліміт доходу на 3 групі у 2026 році: 10 091 049 грн.</p>
-        </div>
-        <div class="card">
-          <span class="card-kicker">Варіант 2</span>
-          <span class="card-title">ТОВ</span>
-          <p class="card-body">Відповідальність обмежена вкладом учасників. Потрібен бухгалтерський облік. Можна бути на 3 групі єдиного податку. Реєстрація триває 1-3 дні й безкоштовна, а якщо проходить через нотаріуса, оплачуються його послуги.</p>
-        </div>
-      </div>
-      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:var(--space-6) 0 0">Для невеликого закладу з одним власником часто достатньо ФОП. ТОВ розглядають, коли є кілька власників, інвестор або потрібно відокремити особисту відповідальність від бізнесу. Підберу форму під ваш заклад.</p>
-    </div>
-  </section>
-
-  <section style="border-top:1px solid var(--color-divider)">
-    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
       <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-4)">Що врахувати до відкриття кав'ярні</h2>
       <ul style="max-width:62ch;color:var(--color-neutral-800);line-height:1.7;margin:0 0 var(--space-4);padding-left:1.2em">
         <li>Група ФОП і ліміт доходу: що буде, якщо його перевищити, читайте в статті <a href="/blog/limit-dokhodu/">«Ліміт доходу ФОП»</a>.</li>
@@ -279,12 +235,6 @@ const jsonLd = [
 
       <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Чи потрібен ПРРО для кав'ярні?</h3>
       <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">Якщо гості платять готівкою, карткою чи через платіжні сервіси, потрібен фіскальний чек. Штраф за його відсутність: 100% суми розрахунку за перше порушення і 150% за повторні.</p>
-
-      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Чи зменшує комісія еквайрингу дохід ФОП?</h3>
-      <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">Ні. Для ФОП на єдиному податку 1-3 груп доходом є повна сума оплати карткою, комісія банку його не зменшує. Позиція ДПС колись змінювалася, тому звіряюся з актуальним роз'ясненням.</p>
-
-      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">ФОП чи ТОВ обрати для кав'ярні?</h3>
-      <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">Для невеликого закладу з одним власником часто достатньо ФОП. ТОВ розглядають, коли є кілька власників, інвестор або потрібно відокремити особисту відповідальність від бізнесу. Підберу форму під ваш заклад.</p>
 
       <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Яку групу ФОП обрати для кав'ярні?</h3>
       <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">Це залежить від очікуваного доходу й кількості працівників. На 2 групі можна мати до 10 найманих працівників, а річний ліміт доходу у 2026 році становить 7 211 598 грн. На 3 групі ліміт вищий: 10 091 049 грн. Допоможу підібрати групу до реєстрації.</p>
