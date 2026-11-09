@@ -1,0 +1,128 @@
+---
+import Base from '../layouts/Base.astro';
+const cities = ['Київ', 'Бровари', 'Бориспіль', 'Ірпінь', 'Буча', 'Біла Церква', 'Львів', 'Одеса', 'Дніпро', 'Кам\'янське', 'Харків', 'Запоріжжя', 'Вінниця', 'Полтава', 'Черкаси', 'Житомир', 'Чернігів', 'Суми', 'Хмельницький', 'Рівне', 'Луцьк', 'Тернопіль', 'Івано-Франківськ', 'Ужгород', 'Чернівці', 'Кропивницький', 'Миколаїв', 'Кривий Ріг'];
+---
+<Base title="Бухгалтер для кав'ярні онлайн по всій Україні — Гарний Звіт" description="Бухгалтерський супровід кав'ярень і кафе онлайн по всій Україні: Київ, Бровари, Львів, Одеса, Дніпро. ПРРО, податки, зарплата, звітність. Від 2000 грн/міс.">
+<main>
+  <section style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+    <p style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:var(--space-4)">Онлайн · Київ, Бровари та вся Україна</p>
+    <h1 style="font-size:clamp(34px,4.6vw,54px);font-weight:400;line-height:1.08;margin:0 0 var(--space-4);max-width:20ch">Бухгалтер для кав'ярні — онлайн по всій Україні</h1>
+    <p style="text-align:justify;hyphens:auto;font-size:17px;line-height:1.65;max-width:56ch;color:var(--color-neutral-800)">Веду бухгалтерію кав'ярень, кафе та міні-кафе: облік доходів, ПРРО, єдиний податок, ЄСВ, зарплата працівників і звітність у строк. Супровід повністю дистанційний: документи та підписи в електронному вигляді, тож місто, де працює ваш заклад, значення не має.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);margin-top:var(--space-6)">
+      <a class="btn btn-primary" href="https://t.me/+380930185887" target="_blank" rel="noreferrer">Написати в Telegram</a>
+      <a class="btn btn-secondary" href="tel:+380930185887">Подзвонити</a>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-6)">Що входить у бухгалтерський супровід кав'ярні та кафе</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-4)">
+        <div class="card">
+          <span class="card-kicker">Щомісяця</span>
+          <span class="card-title">Облік і податки</span>
+          <p class="card-body">Облік доходів, розрахунок єдиного податку та ЄСВ, нагадування про платежі до дедлайну.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Каса</span>
+          <span class="card-title">ПРРО та фіскальні чеки</span>
+          <p class="card-body">Допомога з підключенням ПРРО й контроль чеків: за відсутність фіскального чека штраф становить 100% суми розрахунку.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Кадри</span>
+          <span class="card-title">Працівники</span>
+          <p class="card-body">Оформлення бариста, кухарів і адміністраторів, нарахування зарплати, повідомлення про прийняття, лікарняні та відпустки.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Звітність</span>
+          <span class="card-title">Декларації та звіти</span>
+          <p class="card-body">Квартальні та річні декларації, звітність по ЄСВ і працівниках: подання через електронний кабінет платника.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Старт</span>
+          <span class="card-title">Відкриття кав'ярні</span>
+          <p class="card-body">Реєстрація ФОП, вибір групи та КВЕДів, заява на єдиний податок, відкриття рахунку.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Порядок</span>
+          <span class="card-title">Відновлення обліку</span>
+          <p class="card-body">Аудит минулих періодів, виправлення помилок, уточнюючі декларації.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-4)">Міста, у яких працюю з кав'ярнями</h2>
+      <p style="max-width:60ch;color:var(--color-neutral-800);text-align:justify;margin:0 0 var(--space-4)">Супровід онлайн, тому підходить для кав'ярень і кафе в будь-якому місті України, зокрема:</p>
+      <p style="max-width:80ch;line-height:1.9;margin:0 0 var(--space-4)">{cities.join(' · ')}</p>
+      <p style="max-width:60ch;color:var(--color-neutral-800);text-align:justify;margin:0">Важлива місцева деталь: для ФОП 1 і 2 груп ставку єдиного податку встановлює місцева рада, тому в різних громадах вона різна. Перед стартом перевіряю рішення саме вашої громади.</p>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-4)">Вартість</h2>
+      <p style="max-width:52ch;color:var(--color-neutral-800);text-align:justify">Ціна фіксована й не залежить від кількості операцій: <strong>2000 грн на місяць</strong> для ФОП без найманих працівників і <strong>+500 грн</strong> за кожного працівника. Наприклад, кав'ярня з трьома працівниками обійдеться в 3500 грн на місяць. Оплата щомісяця, без довгих контрактів.</p>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-6)">Як ми працюємо</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--space-6)">
+        <div>
+          <p style="font-family:var(--font-heading);font-size:44px;line-height:1;font-weight:400;color:var(--color-accent);margin:0 0 var(--space-3)">01</p>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Знайомство</h3>
+          <p style="margin:0;font-size:14px;color:var(--color-neutral-800)">Коротка розмова у Telegram або по телефону: група, працівники, спосіб оплати клієнтів, поточний стан обліку.</p>
+        </div>
+        <div>
+          <p style="font-family:var(--font-heading);font-size:44px;line-height:1;font-weight:400;color:var(--color-accent);margin:0 0 var(--space-3)">02</p>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Доступи</h3>
+          <p style="margin:0;font-size:14px;color:var(--color-neutral-800)">Договір, ключ ЕЦП та виписки з рахунку. Далі все відбувається онлайн.</p>
+        </div>
+        <div>
+          <p style="font-family:var(--font-heading);font-size:44px;line-height:1;font-weight:400;color:var(--color-accent);margin:0 0 var(--space-3)">03</p>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Облік і звітність</h3>
+          <p style="margin:0;font-size:14px;color:var(--color-neutral-800)">Щомісяця отримуєте суми податків і нагадування, а звіти подаю у строк.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:760px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-6)">Питання й відповіді</h2>
+
+      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Скільки коштує бухгалтер для кав'ярні?</h3>
+      <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">2000 грн на місяць плюс 500 грн за кожного найманого працівника. Точну суму назву після короткої розмови.</p>
+
+      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Чи потрібен ПРРО для кав'ярні?</h3>
+      <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">Якщо гості платять готівкою, карткою чи через платіжні сервіси, потрібен фіскальний чек. Штраф за його відсутність: 100% суми розрахунку за перше порушення і 150% за повторні.</p>
+
+      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Яку групу ФОП обрати для кав'ярні?</h3>
+      <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">Це залежить від очікуваного доходу й кількості працівників. На 2 групі можна мати до 10 найманих працівників, а річний ліміт доходу у 2026 році становить 7 211 598 грн. На 3 групі ліміт вищий: 10 091 049 грн. Допоможу підібрати групу до реєстрації.</p>
+
+      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Чи можна працювати з бухгалтером з іншого міста?</h3>
+      <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">Так. Усі документи та підписи в електронному вигляді, тому відстань не має значення: супровід однаковий для кав'ярні в Києві, Броварах, Львові чи будь-якому іншому місті.</p>
+
+      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Чи допоможете з працівниками та зарплатою?</h3>
+      <p style="margin:0;color:var(--color-neutral-800)">Так: оформлення працівників, нарахування зарплати, ЄСВ, повідомлення про прийняття на роботу, лікарняні та відпустки.</p>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider);background:var(--color-surface)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6);display:flex;flex-wrap:wrap;gap:var(--space-6);align-items:end;justify-content:space-between">
+      <div>
+        <h2 style="font-size:30px;font-weight:400;margin:0 0 var(--space-2)">Розберемо вашу ситуацію за 15 хвилин</h2>
+        <p style="margin:0;color:var(--color-neutral-800);max-width:48ch">Напишіть у Telegram або подзвоніть: скажу, що потрібно робити, ще до підписання договору.</p>
+      </div>
+      <div style="display:flex;gap:var(--space-2);flex-wrap:wrap">
+        <a class="btn btn-primary" href="https://t.me/+380930185887" target="_blank" rel="noreferrer">Telegram</a>
+        <a class="btn btn-secondary" href="tel:+380930185887">+38 (093) 018-58-87</a>
+      </div>
+    </div>
+  </section>
+</main>
+</Base>
