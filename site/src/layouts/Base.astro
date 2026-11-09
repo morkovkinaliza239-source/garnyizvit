@@ -15,7 +15,20 @@ const { title, description = 'Бухгалтерський супровід ФО
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,400&family=Lora:ital,wght@0,400..600;1,400&display=swap">
   <link rel="stylesheet" href="/styles.css">
-  <style>body{margin:0;text-wrap:pretty}a:hover{color:var(--color-accent-700)}</style>
+  <style>
+    body{margin:0;text-wrap:pretty}
+    a:hover{color:var(--color-accent-700)}
+    .dd{position:relative;display:inline-flex;align-items:center}
+    .dd-menu{display:none;position:absolute;top:100%;left:-12px;min-width:250px;padding:8px 0;background:var(--color-bg);border:1px solid var(--color-divider);border-radius:var(--radius-md);box-shadow:0 8px 24px rgba(0,0,0,0.08);z-index:30}
+    .dd:hover .dd-menu,.dd:focus-within .dd-menu{display:block}
+    .dd-menu a{display:block;padding:8px 16px;white-space:nowrap}
+    .dd-menu a:hover{background:var(--color-surface)}
+    @media (max-width:720px){
+      .dd{display:flex;flex-direction:column;align-items:flex-start}
+      .dd-menu{display:block;position:static;border:0;box-shadow:none;padding:4px 0 0 12px;background:transparent;min-width:0}
+      .dd-menu a{padding:4px 0}
+    }
+  </style>
 </head>
 <body>
 <div style="min-height:100vh;background:var(--color-bg);color:var(--color-text)">
@@ -24,7 +37,13 @@ const { title, description = 'Бухгалтерський супровід ФО
       <a class="nav-brand" href="/" style="text-decoration:none;letter-spacing:-0.01em">Гарний<span style="color:var(--color-accent)">.</span>Звіт</a>
       <nav style="display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap">
         <a href="/">Головна</a>
-        <a href="/poslugy/">Послуги</a>
+        <div class="dd">
+          <a href="/poslugy/">Послуги<span aria-hidden="true" style="font-size:10px;margin-left:5px">▾</span></a>
+          <div class="dd-menu">
+            <a href="/poslugy/">Усі послуги</a>
+            <a href="/buhgalter-dlya-kavyarni/">Бухгалтер для кав'ярні</a>
+          </div>
+        </div>
         <a href="/taryfy/">Тарифи</a>
         <a href="/pro-mene/">Про мене</a>
         
