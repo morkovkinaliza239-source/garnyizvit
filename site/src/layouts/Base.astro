@@ -1,5 +1,5 @@
 ---
-const { title, description = 'Бухгалтерський супровід ФОП 2 і 3 групи. Київ та вся Україна, онлайн. 2000 грн/міс.' } = Astro.props;
+const { title, description = 'Бухгалтерський супровід ФОП 2 і 3 групи. Київ та вся Україна, онлайн. 2000 грн/міс.', noindex = false } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="uk">
@@ -9,7 +9,7 @@ const { title, description = 'Бухгалтерський супровід ФО
   <title>{title}</title>
   <meta name="description" content={description}>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="canonical" href={Astro.url.href}>
+  {noindex ? <meta name="robots" content="noindex, follow"> : <link rel="canonical" href={Astro.url.href}>}
   <link rel="alternate" type="application/rss+xml" title="Блог — Гарний Звіт" href="/rss.xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
