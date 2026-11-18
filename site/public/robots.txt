@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://garnyizvit.org.ua/sitemap.xml
-Sitemap: https://garnyizvit.org.ua/sitemap-news.xml
