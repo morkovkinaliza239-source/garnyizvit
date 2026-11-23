@@ -1,0 +1,266 @@
+---
+import Base from '../layouts/Base.astro';
+const pageUrl = 'https://garnyizvit.org.ua/buhgalter-dlya-optovoyi-torgivli/';
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Бухгалтер для оптової торгівлі: супровід ФОП",
+    "serviceType": "Бухгалтерський супровід ФОП в оптовій торгівлі",
+    "url": pageUrl,
+    "areaServed": { "@type": "Country", "name": "Україна" },
+    "provider": {
+      "@type": "Organization",
+      "name": "Гарний Звіт",
+      "url": "https://garnyizvit.org.ua/",
+      "telephone": "+380930185887"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "UAH",
+      "price": "2000",
+      "description": "Від 2000 грн на місяць, плюс 500 грн за кожного найманого працівника"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Головна", "item": "https://garnyizvit.org.ua/" },
+      { "@type": "ListItem", "position": 2, "name": "Послуги", "item": "https://garnyizvit.org.ua/poslugy/" },
+      { "@type": "ListItem", "position": 3, "name": "Бухгалтер для оптової торгівлі", "item": pageUrl }
+    ]
+  }
+];
+---
+<Base title="Бухгалтер для оптової торгівлі: супровід ФОП — Гарний Звіт" description="Бухгалтер для оптової торгівлі онлайн: накладні, ТТН, облік товару, податки, зарплата і звітність ФОП 2 і 3 групи. Від 2000 грн/міс.">
+<script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+<main>
+  <section style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+    <p style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:var(--space-4)">Онлайн-супровід оптових продажів</p>
+    <h1 style="font-size:clamp(34px,4.6vw,54px);font-weight:400;line-height:1.08;margin:0 0 var(--space-4);max-width:24ch">Бухгалтер для оптової торгівлі: супровід ФОП</h1>
+    <p style="text-align:justify;hyphens:auto;font-size:17px;line-height:1.65;max-width:58ch;color:var(--color-neutral-800)">Веду бухгалтерію ФОП, які продають товар оптом магазинам, компаніям та іншим підприємцям. Готую рахунки й видаткові накладні, звіряю оплати з відвантаженнями, стежу за документами на товар і лімітом доходу, рахую податки, ЄСВ і зарплату, подаю звітність у строк. Працюю дистанційно.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);margin-top:var(--space-6)">
+      <a class="btn btn-primary" href="https://t.me/+380930185887" target="_blank" rel="noreferrer">Написати в Telegram</a>
+      <a class="btn btn-secondary" href="tel:+380930185887">Подзвонити</a>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-4)">Бухгалтерський супровід оптової торгівлі онлайн</h2>
+      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:0 0 var(--space-4)">В опті головне: документи. Кожне відвантаження має бути підтверджене накладною, кожна оплата прив'язана до свого рахунку, а на товар на складі мають бути документи від постачальника. Коли цей порядок налагоджений, звітність і перевірки проходять спокійно.</p>
+      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:0 0 var(--space-4)">Супровід повністю дистанційний: договір, ключ ЕЦП, первинні документи й звітність в електронному вигляді, спілкування в Telegram або по телефону. Тому місто, де ви працюєте, значення не має.</p>
+      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:0">Допомагаю і на старті: реєстрація ФОП, вибір групи та КВЕДів для оптової торгівлі, відкриття рахунку.</p>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-4)">Документи в оптовій торгівлі: що готую</h2>
+      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:0 0 var(--space-6)">Беру на себе первинні документи, щоб ви займалися продажами, а не паперами. Документи формуються в програмі обліку і надсилаються покупцям в електронному вигляді.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-4)">
+        <div class="card">
+          <span class="card-kicker">Угода</span>
+          <span class="card-title">Договір поставки</span>
+          <p class="card-body">Перевіряю умови договору з покупцем: порядок оплати, відвантаження й повернень, щоб вони збігалися з тим, як ви реально працюєте.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Оплата</span>
+          <span class="card-title">Рахунки на оплату</span>
+          <p class="card-body">Виставляю рахунки покупцям і стежу, щоб кожна оплата надійшла саме за своїм рахунком.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Відвантаження</span>
+          <span class="card-title">Видаткові накладні</span>
+          <p class="card-body">Оформлюю накладні на кожне відвантаження. Нумерація та дати без розривів, щоб документи були в порядку для покупця й податкової.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Перевезення</span>
+          <span class="card-title">ТТН</span>
+          <p class="card-body">Товарно-транспортні накладні, коли товар везе ваш транспорт або перевізник.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Розрахунки</span>
+          <span class="card-title">Акти звірки</span>
+          <p class="card-body">Звіряю розрахунки з покупцями й постачальниками: хто кому і скільки винен на певну дату.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Закупівлі</span>
+          <span class="card-title">Документи на товар</span>
+          <p class="card-body">Контролюю вхідні накладні від постачальників: податкова може перевірити, чи є документи, що підтверджують походження товару.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-6)">Бухгалтерський супровід ФОП</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-4)">
+        <div class="card">
+          <span class="card-kicker">Щомісяця</span>
+          <span class="card-title">Облік і податки</span>
+          <p class="card-body">Облік доходів за випискою банку, розрахунок єдиного податку та ЄСВ, нагадування про платежі до дедлайну.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Контроль</span>
+          <span class="card-title">Ліміт доходу</span>
+          <p class="card-body">В опті обороти великі, тому стежу за лімітом групи протягом року і попереджаю заздалегідь, якщо він наближається.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Кадри</span>
+          <span class="card-title">Працівники</span>
+          <p class="card-body">Оформлення менеджерів, комірників і водіїв, нарахування зарплати, повідомлення про прийняття, лікарняні та відпустки.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Звітність</span>
+          <span class="card-title">Декларації та звіти</span>
+          <p class="card-body">Квартальні та річні декларації, звітність по ЄСВ і працівниках: подання через електронний кабінет платника.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">Порядок</span>
+          <span class="card-title">Відновлення обліку</span>
+          <p class="card-body">Аудит минулих періодів, відновлення накладних і звірок, уточнюючі декларації.</p>
+        </div>
+      </div>
+      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:var(--space-6) 0 0">Усі напрямки роботи дивіться на сторінці <a href="/poslugy/">«Послуги»</a>.</p>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-4)">Яку групу ФОП обрати для оптової торгівлі</h2>
+      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:0 0 var(--space-6)">Оптом можна торгувати і на 2, і на 3 групі єдиного податку. Вибір залежить від обороту, кількості працівників і того, чи потрібен вашим покупцям ПДВ.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--space-4)">
+        <div class="card">
+          <span class="card-kicker">2 група</span>
+          <span class="card-title">Для невеликих оборотів</span>
+          <p class="card-body">Продавати товар можна будь-яким покупцям, зокрема компаніям на загальній системі. Обмеження групи: річний ліміт доходу (у 2026 році 7 211 598 грн) і не більше 10 найманих працівників.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">3 група, 5%</span>
+          <span class="card-title">Більший ліміт, без ПДВ</span>
+          <p class="card-body">Податок 5% від доходу, ліміт у 2026 році 10 091 049 грн, кількість працівників не обмежена.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">3 група, 3% + ПДВ</span>
+          <span class="card-title">Коли покупцям потрібен ПДВ</span>
+          <p class="card-body">Якщо ваші покупці працюють з ПДВ і хочуть податковий кредит, можна зареєструватися платником ПДВ. Тоді додається облік ПДВ і щомісячна звітність.</p>
+        </div>
+      </div>
+      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:var(--space-6) 0 0">Оптова торгівля підакцизними товарами (алкоголь, тютюн, пальне) на єдиному податку заборонена. Що буде, якщо перевищити ліміт, читайте в статті <a href="/blog/limit-dokhodu/">«Ліміт доходу ФОП»</a>. Допоможу порахувати, яка група вигідніша саме для вас, ще до реєстрації.</p>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-4)">Чи потрібен ПРРО в оптовій торгівлі</h2>
+      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:0 0 var(--space-4)">Якщо покупець оплачує товар переказом зі свого банківського рахунку на ваш рахунок за IBAN-реквізитами, фіскальний чек не потрібен: достатньо рахунку й видаткової накладної.</p>
+      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:0">Якщо ж ви приймаєте готівку, оплату карткою через термінал чи платіжні сервіси, потрібен ПРРО. Штраф за відсутність чека: 100% суми розрахунку за перше порушення і 150% за повторні. Перевіряю, як саме вам платять покупці, і кажу, чи потрібна каса.</p>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-4)">КВЕДи для оптової торгівлі</h2>
+      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:0 0 var(--space-6)">Оптова торгівля: це продаж товару для перепродажу або використання в бізнесі, а не для особистого споживання. Для неї потрібні КВЕДи розділу 46, а якщо продаєте ще й у роздріб, додають КВЕДи розділу 47. Найчастіше використовують такі:</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--space-4)">
+        <div class="card">
+          <span class="card-kicker">46.90</span>
+          <span class="card-title">Неспеціалізована оптова торгівля</span>
+          <p class="card-body">Універсальний код, якщо продаєте оптом товари різних груп.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">46.49</span>
+          <span class="card-title">Оптова торгівля іншими товарами господарського призначення</span>
+          <p class="card-body">Побутові товари, посуд, косметика, іграшки, канцтовари та інші непродовольчі товари.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">46.38</span>
+          <span class="card-title">Оптова торгівля іншими продуктами харчування</span>
+          <p class="card-body">Для оптових поставок продуктів харчування.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">46.73</span>
+          <span class="card-title">Оптова торгівля деревиною, будівельними матеріалами та санітарно-технічним обладнанням</span>
+          <p class="card-body">Для постачальників будматеріалів і сантехніки.</p>
+        </div>
+        <div class="card">
+          <span class="card-kicker">46.19</span>
+          <span class="card-title">Діяльність посередників у торгівлі товарами широкого асортименту</span>
+          <p class="card-body">Якщо працюєте як посередник і отримуєте винагороду, а не продаєте власний товар.</p>
+        </div>
+      </div>
+      <p style="max-width:62ch;color:var(--color-neutral-800);text-align:justify;margin:var(--space-6) 0 0">КВЕДи вказують під час реєстрації ФОП або додають пізніше заявою про зміни. Покроково про реєстрацію: <a href="/blog/yak-vidkryty-fop-2027/">«Як відкрити ФОП у 2027 році»</a>. Підберу КВЕДи під ваш асортимент.</p>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-4)">Вартість</h2>
+      <p style="max-width:56ch;color:var(--color-neutral-800);text-align:justify">Бухгалтерський супровід ФОП: <strong>2000 грн на місяць</strong> для ФОП без найманих працівників і <strong>+500 грн</strong> за кожного працівника. Наприклад, оптовий склад із двома працівниками обійдеться в 3000 грн на місяць. Якщо накладних щомісяця дуже багато або ви працюєте з ПДВ, точну вартість назву після короткої розмови. Оплата щомісяця, без довгих контрактів. Що входить у супровід, дивіться на сторінці <a href="/taryfy/">«Тарифи»</a>.</p>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-6)">Як ми працюємо</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--space-6)">
+        <div>
+          <p style="font-family:var(--font-heading);font-size:44px;line-height:1;font-weight:400;color:var(--color-accent);margin:0 0 var(--space-3)">01</p>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Знайомство</h3>
+          <p style="margin:0;font-size:14px;color:var(--color-neutral-800)">Коротка розмова у Telegram або по телефону: група, обороти, кількість покупців і накладних, працівники.</p>
+        </div>
+        <div>
+          <p style="font-family:var(--font-heading);font-size:44px;line-height:1;font-weight:400;color:var(--color-accent);margin:0 0 var(--space-3)">02</p>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Порядок у документах</h3>
+          <p style="margin:0;font-size:14px;color:var(--color-neutral-800)">Перевіряю договори, накладні й оплати за минулі місяці, налаштовую, як надалі оформлюються рахунки та відвантаження.</p>
+        </div>
+        <div>
+          <p style="font-family:var(--font-heading);font-size:44px;line-height:1;font-weight:400;color:var(--color-accent);margin:0 0 var(--space-3)">03</p>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Супровід</h3>
+          <p style="margin:0;font-size:14px;color:var(--color-neutral-800)">Щомісяця документи, податки, ЄСВ, зарплата й звітність у строк, а також контроль ліміту доходу.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:760px;margin:0 auto;padding:var(--space-8) var(--space-6)">
+      <h2 style="font-size:34px;font-weight:400;margin:0 0 var(--space-6)">Питання й відповіді</h2>
+
+      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Чи може ФОП 2 групи торгувати оптом?</h3>
+      <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">Так. Обмеження 2 групи щодо покупців стосуються послуг, а товар можна продавати будь-кому, зокрема компаніям на загальній системі. Потрібен КВЕД оптової торгівлі, і треба вкладатися в ліміт доходу та не більше 10 працівників.</p>
+
+      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Які документи потрібні при оптовому продажу?</h3>
+      <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">Зазвичай це договір поставки, рахунок на оплату та видаткова накладна на кожне відвантаження. Якщо товар перевозять, додається ТТН. Періодично варто робити акти звірки з покупцями.</p>
+
+      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Чи потрібен ПРРО, якщо покупці платять на рахунок?</h3>
+      <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">Якщо покупець переказує гроші зі свого банківського рахунку на ваш рахунок за IBAN-реквізитами, чек не потрібен. Для готівки, оплати карткою чи через платіжні сервіси потрібен ПРРО.</p>
+
+      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Мої покупці хочуть ПДВ. Що робити?</h3>
+      <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">На 3 групі можна обрати ставку 3% і зареєструватися платником ПДВ. Тоді покупці отримують податковий кредит, а у вас з'являються податкові накладні й щомісячна декларація з ПДВ. Порахую, чи це вигідно саме вам.</p>
+
+      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Скільки коштує бухгалтер для оптової торгівлі?</h3>
+      <p style="margin:0 0 var(--space-6);color:var(--color-neutral-800)">2000 грн на місяць плюс 500 грн за кожного найманого працівника. При великому обсязі накладних або роботі з ПДВ вартість назву після короткої розмови.</p>
+
+      <h3 style="font-size:19px;font-weight:600;margin:0 0 var(--space-2)">Чи допоможете навести порядок у минулих періодах?</h3>
+      <p style="margin:0;color:var(--color-neutral-800)">Так: відновлю накладні та звірки, перевірю декларації за минулі періоди і за потреби подам уточнюючі.</p>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider);background:var(--color-surface)">
+    <div style="max-width:1080px;margin:0 auto;padding:var(--space-8) var(--space-6);display:flex;flex-wrap:wrap;gap:var(--space-6);align-items:end;justify-content:space-between">
+      <div>
+        <h2 style="font-size:30px;font-weight:400;margin:0 0 var(--space-2)">Розберемо вашу ситуацію за 15 хвилин</h2>
+        <p style="margin:0;color:var(--color-neutral-800);max-width:48ch">Напишіть у Telegram або подзвоніть: скажу, що потрібно робити, ще до підписання договору.</p>
+      </div>
+      <div style="display:flex;gap:var(--space-2);flex-wrap:wrap">
+        <a class="btn btn-primary" href="https://t.me/+380930185887" target="_blank" rel="noreferrer">Telegram</a>
+        <a class="btn btn-secondary" href="tel:+380930185887">+38 (093) 018-58-87</a>
+      </div>
+    </div>
+  </section>
+</main>
+</Base>

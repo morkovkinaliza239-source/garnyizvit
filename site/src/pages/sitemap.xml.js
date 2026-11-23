@@ -10,6 +10,7 @@ export async function GET(context) {
     '/blog/',
     '/kontakty/',
     '/buhgalter-dlya-kavyarni/',
+    '/buhgalter-dlya-optovoyi-torgivli/',
     '/oferta/',
     '/pryvatnist/',
   ];
